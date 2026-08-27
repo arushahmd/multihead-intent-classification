@@ -1,8 +1,10 @@
 # Multi-Head Intent Classification
 
-A clean portfolio implementation of hierarchical intent classification for restaurant-ordering conversations. A shared transformer encoder feeds independent main-intent and sub-intent classification heads, while the surrounding package handles validated data ingestion, duplicate-safe splitting, experiment identity, evaluation, local inference, and aggregate error analysis.
+[![CI](https://github.com/arushahmd/multihead-intent-classification/actions/workflows/ci.yml/badge.svg)](https://github.com/arushahmd/multihead-intent-classification/actions/workflows/ci.yml)
 
-This is a conventional encoder-classification project—not an LLM, retrieval, or agent framework. It is derived from work used in a restaurant-ordering conversational AI system and has been reorganized as a self-contained engineering reference.
+A multi-head transformer classifier for restaurant-ordering intent detection. A shared encoder predicts broad main intents and fine-grained sub-intents through independent classification heads, with leakage-resistant data splitting, reproducible experiment manifests, evaluation, and local inference.
+
+This repository is a self-contained implementation derived from professional conversational-AI work, with historical evidence kept separate from the public sample data and current pipeline.
 
 ## Architecture
 
