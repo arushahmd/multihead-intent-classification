@@ -1,0 +1,8 @@
+true_label,cart,confirmation,conversation,greeting,menu,order,payment
+cart,11684,0,27,0,61,10,0
+confirmation,8,0,211,0,0,35,4
+conversation,0,0,0,0,0,0,0
+greeting,0,0,189,0,0,1,0
+menu,41,0,2,0,2846,7,12
+order,55,0,24,0,7,540,17
+payment,1,0,0,0,3,18,247

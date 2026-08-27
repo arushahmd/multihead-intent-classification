@@ -1,0 +1,103 @@
+text,main_intent,sub_intent
+"Add a veggie burger to my order",cart,add_item
+"Please put one soup in the cart",cart,add_item
+"I would like to add a side salad",cart,add_item
+"Is the soup already in my cart?",cart,cart_item_query
+"What size drink did I add?",cart,cart_item_query
+"Does my cart include fries?",cart,cart_item_query
+"Make that two bowls of soup",cart,change_quantity
+"Change the burger quantity to three",cart,change_quantity
+"I only need one lemonade",cart,change_quantity
+"Remove everything from my cart",cart,clear_cart
+"Start my cart over",cart,clear_cart
+"Clear all the items I selected",cart,clear_cart
+"Make the sandwich without onions",cart,modify_item
+"Add extra sauce to the wrap in my cart",cart,modify_item
+"Change my pizza topping to mushrooms",cart,modify_item
+"Take the soup out of my cart",cart,remove_item
+"Remove the lemonade from my order",cart,remove_item
+"I no longer want the side salad",cart,remove_item
+"Swap the soup for a salad",cart,replace_item
+"Replace the cola with sparkling water",cart,replace_item
+"Change the burger to a veggie wrap",cart,replace_item
+"Read my order back to me",cart,review_order
+"Can we review everything before I pay",cart,review_order
+"Please summarize what I ordered",cart,review_order
+"Show me my cart",cart,show_cart
+"What is currently in my basket",cart,show_cart
+"Let me see the items I selected",cart,show_cart
+"What is my current total",cart,show_total
+"How much does my cart cost",cart,show_total
+"Tell me the order total",cart,show_total
+"Undo my last change",cart,undo_last
+"Reverse the previous action",cart,undo_last
+"Restore the cart to before my last edit",cart,undo_last
+"Yes that is correct",conversation,affirm
+"Sure please continue",conversation,affirm
+"That sounds good to me",conversation,affirm
+"No that is not right",conversation,deny
+"Please do not do that",conversation,deny
+"I would rather not",conversation,deny
+"Goodbye for now",conversation,goodbye
+"That is all bye",conversation,goodbye
+"See you next time",conversation,goodbye
+"Thank you for helping",conversation,gratitude
+"Thanks that was useful",conversation,gratitude
+"I appreciate it",conversation,gratitude
+"Hello there",conversation,greeting
+"Hi I am ready to order",conversation,greeting
+"Good afternoon",conversation,greeting
+"Tell me a joke",conversation,unknown
+"What is the weather like",conversation,unknown
+"I need help with something unrelated",conversation,unknown
+"What comes with the veggie burger?",menu,ask_item_info
+"Describe the tomato soup",menu,ask_item_info
+"What ingredients are in the salad?",menu,ask_item_info
+"How much is the lentil soup?",menu,ask_item_price
+"What does a side salad cost?",menu,ask_item_price
+"Tell me the price of the lemonade",menu,ask_item_price
+"Which dressings can I choose?",menu,ask_options
+"What drink sizes are available?",menu,ask_options
+"What sides can come with a sandwich?",menu,ask_options
+"Is the mushroom pizza available today?",menu,availability_query
+"Do you still have tomato soup?",menu,availability_query
+"Can I order a veggie wrap right now?",menu,availability_query
+"Show me the dessert choices",menu,browse_category
+"What salads do you offer?",menu,browse_category
+"Let me browse the drink section",menu,browse_category
+"Can I see the full menu?",menu,browse_menu
+"Show me what I can order",menu,browse_menu
+"Please list the menu",menu,browse_menu
+"What vegetarian dish do you recommend?",menu,recommendation_query
+"Suggest something light for lunch",menu,recommendation_query
+"What is a popular soup?",menu,recommendation_query
+"What time does the restaurant close?",menu,restaurant_info_query
+"Do you offer pickup?",menu,restaurant_info_query
+"Where can I find the restaurant hours?",menu,restaurant_info_query
+"Cancel my order",order,cancel_order
+"I need to stop this order",order,cancel_order
+"Please cancel the meal I submitted",order,cancel_order
+"I am ready to check out",order,checkout
+"Take me to checkout",order,checkout
+"Let me finish and pay",order,checkout
+"Confirm this order",order,confirm_order
+"Yes place the order now",order,confirm_order
+"Submit everything exactly as shown",order,confirm_order
+"I have finished choosing items",order,done_ordering
+"That is everything I want",order,done_ordering
+"I am done ordering",order,done_ordering
+"Where is my order now?",order,order_status
+"Has my meal been prepared?",order,order_status
+"Check the status of my order",order,order_status
+"I already completed the payment",payment,payment_done
+"The payment has been sent",payment,payment_done
+"I finished paying",payment,payment_done
+"Which payment methods do you accept?",payment,payment_methods_query
+"Can I pay with a debit card?",payment,payment_methods_query
+"Do you accept cash for pickup?",payment,payment_methods_query
+"I would like to pay now",payment,payment_request
+"Please open the payment step",payment,payment_request
+"Take me to payment",payment,payment_request
+"Did my payment go through?",payment,payment_status
+"Check whether the charge succeeded",payment,payment_status
+"Is my payment still pending?",payment,payment_status

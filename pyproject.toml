@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "multihead-intent-classification"
+version = "0.1.0"
+description = "A reproducible multi-head transformer classifier for hierarchical conversational intent labels."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Arush Ahmed" }]
+dependencies = [
+  "accelerate>=0.34,<2",
+  "numpy>=1.24,<3",
+  "PyYAML>=6.0,<7",
+  "torch>=2.1,<3",
+  "transformers>=4.45,<5",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8,<10",
+  "ruff>=0.8,<1",
+]
+
+[project.scripts]
+intent-train = "intent_classifier.training:train_cli"
+intent-evaluate = "intent_classifier.evaluation:evaluate_cli"
+intent-predict = "intent_classifier.inference:predict_cli"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-ra --strict-markers"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]

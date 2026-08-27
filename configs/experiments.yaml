@@ -1,0 +1,34 @@
+schema_version: 1
+experiments:
+  baseline_distilbert:
+    description: Reproducible baseline configuration for a user-initiated training run.
+    encoder_name_or_path: distilbert-base-uncased
+    dataset_path: data/sample/intents.csv
+    hierarchy_path: configs/label_hierarchy.json
+    output_root: artifacts/runs
+    split:
+      train_fraction: 0.70
+      validation_fraction: 0.15
+      test_fraction: 0.15
+      seed: 42
+      group_key: normalized_text
+    model:
+      max_length: 64
+      dropout: 0.20
+      main_loss_weight: 1.0
+      sub_loss_weight: 1.0
+    training:
+      learning_rate: 0.00005
+      weight_decay: 0.01
+      warmup_ratio: 0.10
+      epochs: 6
+      train_batch_size: 16
+      eval_batch_size: 32
+      gradient_accumulation_steps: 1
+      early_stopping_patience: 2
+      metric_for_best_model: validation_joint_exact_match
+      greater_is_better: true
+    tracking:
+      save_split_membership: true
+      record_runtime: true
+      record_artifact_hashes: true

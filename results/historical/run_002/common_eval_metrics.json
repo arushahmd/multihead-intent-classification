@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "evaluation_context": "historical_common_set_audit",
+  "historical_run": "run_002",
+  "rows": 16050,
+  "metrics": {
+    "main_accuracy": 0.9543302180685358,
+    "sub_accuracy": 0.6632398753894081,
+    "joint_exact_match": 0.6456697819314642
+  },
+  "evidence_status": "artifact-reproducible from preserved predictions",
+  "reproducibility_status": "aggregates can be recomputed; model inference cannot be rerun because the checkpoint is missing",
+  "source_artifact_sha256": {
+    "aggregate_metrics_json": "c4eb4b595f8079b883349ed09f0ef758d5ac9575a4091359689229d06c62cea2",
+    "preserved_predictions_csv_not_distributed": "88976e1ff9ab1a378fc2bc6bb37c19edb9d4f8b0a274990cbdff7d9525cbde7d"
+  },
+  "limitations": [
+    "The common set overlaps historical training-source data.",
+    "The common set uses six main and 37 sub labels; run_002 used five main and 34 sub labels.",
+    "Taxonomy concepts changed between the historical training and common-set labels.",
+    "The common set was later used for model selection, so it is not an independent blind test.",
+    "These values are an audit of preserved historical predictions, not current model performance."
+  ]
+}

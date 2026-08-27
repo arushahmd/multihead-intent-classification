@@ -1,0 +1,44 @@
+ground_truth_main_intent,support,correct,wrong,accuracy,level,top_wrong_predictions,ground_truth_sub_intent
+cart,11782,11684,98,0.9916822271261246,main,menu (61); conversation (27); order (10),
+confirmation,258,0,258,0.0,main,conversation (211); order (35); cart (8); payment (4),
+greeting,190,0,190,0.0,main,conversation (189); order (1),
+menu,2908,2846,62,0.9786795048143053,main,cart (41); payment (12); order (7); conversation (2),
+order,643,540,103,0.8398133748055988,main,cart (55); conversation (24); payment (17); menu (7),
+payment,269,247,22,0.9182156133828996,main,order (18); menu (3); cart (1),
+,2001,1862,139,0.9305347326336831,sub,modify_item (71); change_quantity (35); ask_item_info (12); cart_item_query (5); clear_cart (4); browse_category (4); availability_query (3); remove_item (2); affirm (2); ask_options (1),add_item
+,136,100,36,0.7352941176470589,sub,confirm_order (14); checkout (10); greeting (4); payment_request (3); done_ordering (1); deny (1); payment_methods_query (1); add_item (1); unknown (1),affirm
+,34,0,34,0.0,sub,greeting (34),afternoon
+,688,649,39,0.9433139534883721,sub,browse_category (18); order_status (6); recommendation_query (5); show_cart (4); browse_menu (2); show_total (1); availability_query (1); ask_item_price (1); payment_status (1),ask_item_info
+,109,84,25,0.7706422018348624,sub,browse_menu (12); browse_category (7); modify_item (2); add_item (1); ask_item_info (1); availability_query (1); recommendation_query (1),ask_options
+,1227,0,1227,0.0,sub,ask_item_price (1155); show_total (24); ask_item_info (19); add_item (14); payment_methods_query (11); recommendation_query (2); browse_category (1); ask_options (1),ask_price
+,644,635,9,0.9860248447204969,sub,ask_item_info (9),availability_query
+,61,57,4,0.9344262295081968,sub,ask_options (4),browse_category
+,71,70,1,0.9859154929577465,sub,ask_options (1),browse_menu
+,69,61,8,0.8840579710144928,sub,remove_item (2); deny (2); undo_last (2); checkout (1); payment_request (1),cancel_order
+,1141,1138,3,0.9973707274320771,sub,order_status (1); show_cart (1); availability_query (1),cart_item_query
+,1863,1763,100,0.9463231347289318,sub,add_item (99); unknown (1),change_quantity
+,51,51,0,1.0,sub,,checkout
+,58,54,4,0.9310344827586207,sub,cancel_order (3); remove_item (1),clear_cart
+,48,39,9,0.8125,sub,affirm (4); checkout (2); order_status (2); restaurant_info_query (1),confirm_order
+,122,108,14,0.8852459016393442,sub,undo_last (7); cancel_order (6); payment_request (1),deny
+,35,0,35,0.0,sub,greeting (35),evening
+,56,0,56,0.0,sub,done_ordering (31); affirm (6); checkout (6); gratitude (5); confirm_order (3); unknown (2); restaurant_info_query (2); payment_request (1),finish_order
+,26,26,0,1.0,sub,,greeting
+,1172,981,191,0.8370307167235495,sub,add_item (106); remove_item (47); change_quantity (16); deny (10); availability_query (4); cart_item_query (4); ask_item_info (2); ask_item_price (1); clear_cart (1),modify_item
+,36,0,36,0.0,sub,greeting (36),morning
+,59,0,59,0.0,sub,greeting (51); goodbye (7); deny (1),night
+,58,0,58,0.0,sub,order_status (49); payment_status (4); deny (3); restaurant_info_query (1); payment_done (1),order_error_status
+,67,0,67,0.0,sub,order_status (57); payment_status (8); checkout (1); deny (1),order_placement_status
+,82,0,82,0.0,sub,order_status (80); unknown (2),order_processing_status
+,155,0,155,0.0,sub,order_status (146); checkout (3); show_cart (2); unknown (1); restaurant_info_query (1); review_order (1); confirm_order (1),order_status_general
+,75,69,6,0.92,sub,payment_status (3); done_ordering (2); order_status (1),payment_done
+,32,29,3,0.90625,sub,recommendation_query (1); ask_item_info (1); ask_options (1),payment_methods_query
+,58,45,13,0.7758620689655172,sub,checkout (8); confirm_order (3); affirm (2),payment_request
+,104,102,2,0.9807692307692307,sub,order_status (2),payment_status
+,108,98,10,0.9074074074074074,sub,browse_menu (5); browse_category (3); show_cart (1); availability_query (1),recommendation_query
+,2113,1455,658,0.6885944155229532,sub,modify_item (493); add_item (126); clear_cart (16); change_quantity (9); undo_last (6); cancel_order (3); ask_item_info (3); deny (1); payment_methods_query (1),remove_item
+,3262,1014,2248,0.3108522378908645,sub,modify_item (1680); change_quantity (329); add_item (163); remove_item (34); ask_item_info (20); cart_item_query (17); deny (2); browse_category (1); order_status (1); clear_cart (1),replace_item
+,57,16,41,0.2807017543859649,sub,show_cart (26); order_status (3); payment_request (3); checkout (2); browse_menu (2); payment_status (1); greeting (1); cancel_order (1); add_item (1); undo_last (1),review_order
+,61,51,10,0.8360655737704918,sub,review_order (2); clear_cart (2); order_status (1); checkout (1); browse_menu (1); cart_item_query (1); browse_category (1); unknown (1),show_cart
+,53,51,2,0.9622641509433962,sub,show_cart (2),show_total
+,58,37,21,0.6379310344827587,sub,deny (9); unknown (4); remove_item (3); affirm (2); cancel_order (2); goodbye (1),undo_last

@@ -1,0 +1,8 @@
+evaluation_context,metric,value,evidence_status,reproducibility_status,notes
+historical_internal_split,validation_joint_accuracy,0.9310344827586207,strongly evidenced,not end-to-end reproducible,"Historical experiment metric; exact checkpoint, training CSV, split membership, and internal predictions were not recovered."
+historical_internal_split,test_main_accuracy,0.9603448275862069,strongly evidenced,not end-to-end reproducible,"Historical experiment metric; do not interpret as current or production performance."
+historical_internal_split,test_sub_accuracy,0.9362068965517242,strongly evidenced,not end-to-end reproducible,"Historical experiment metric; do not interpret as current or production performance."
+historical_internal_split,test_joint_accuracy,0.9258620689655173,strongly evidenced,not end-to-end reproducible,"Historical experiment metric; do not interpret as current or production performance."
+historical_common_set_audit,main_accuracy,0.9543302180685358,artifact-reproducible from preserved predictions,aggregate-reproducible only,"Overlapping non-blind common set with taxonomy mismatch; not a generalization benchmark."
+historical_common_set_audit,sub_accuracy,0.6632398753894081,artifact-reproducible from preserved predictions,aggregate-reproducible only,"Overlapping non-blind common set with taxonomy mismatch; not a generalization benchmark."
+historical_common_set_audit,joint_exact_match,0.6456697819314642,artifact-reproducible from preserved predictions,aggregate-reproducible only,"Overlapping non-blind common set with taxonomy mismatch; not a generalization benchmark."

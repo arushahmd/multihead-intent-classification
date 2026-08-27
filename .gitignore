@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local configuration and caches
+.env
+.cache/
+.hf_cache/
+
+# Generated experiment artifacts
+artifacts/
+runs/
+checkpoints/
+models/
+wandb/
+mlruns/
+
+# Private/full datasets. Only documentation and the illustrative sample are retained.
+data/*
+!data/README.md
+!data/sample/
+!data/sample/**
+
+# Model binaries
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Build outputs
+build/
+dist/
